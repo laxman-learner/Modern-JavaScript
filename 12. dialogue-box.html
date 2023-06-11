@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialogue Boxes</title>
+    <script>
+      // alert dialogue box - alert() does not return anything
+
+      alert("Welcome to JavaScript");
+      // alert() method stops the execution of the rest of the code until we click on "OK" button
+
+      // prompt dialogue box - prompt returns string
+
+      let str;
+      str = prompt("What is your name ?", "your name");
+      document.write("Greeting " + str);
+
+      let age = prompt("What is your age ?", "provide age");
+      document.write(
+        "<br> You are " +
+          age +
+          " years old and afer 5 years you will be " +
+          (age + 5) +
+          " years old"
+      ); //
+      age = prompt("What is your age ?", "provide age");
+      age = parseInt(age);
+      document.write(
+        "<br> You are " +
+          age +
+          " years old and afer 5 years you will be " +
+          (age + 5) +
+          " years old"
+      );
+
+      // confirm dialogue box - returns either true or false i.e. boolean type
+
+      let ans;
+      ans = confirm("Do you want to log out ?");
+      document.write("<br> Your answer is " + ans);
+    </script>
+  </head>
+  <body></body>
+</html>
