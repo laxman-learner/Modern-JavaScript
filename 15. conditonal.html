@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statement</title>
+    <script>
+      /* JavaScript code to accept an number from the user and check whether it is an integer 
+      or a float. Also make sure if the input is non numeric your code displays the message 
+      “You did not input a number   */
+
+      let userInput = prompt("Enter a number:");
+
+      // Check if the input is non-numeric
+      if (isNaN(userInput)) {
+        document.write("You did not input a number.");
+      } else {
+        // Check if the input is an integer
+        if (Number.isInteger(parseFloat(userInput))) {
+          document.write("The input is an integer.");
+        } else {
+          document.write("The input is a float.");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

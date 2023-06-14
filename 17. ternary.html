@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statement</title>
+    <script>
+      /* Write a JavaScript code to accept an integer from the user and check whether it is
+       even or odd. Also make sure that if the user inputs a nonnumeric value your code displays the message 
+        “You did not input a number”on Using only Ternary Operator   */
+
+      let userInput = prompt("Enter a number:");
+
+      // Check if the input is non-numeric
+      let result =
+        isNaN(userInput) === true
+          ? "You did not input a number."
+          : parseInt(userInput) % 2 === 0
+          ? "The number is even."
+          : "The number is odd.";
+
+      console.log(result);
+    </script>
+  </head>
+  <body></body>
+</html>
