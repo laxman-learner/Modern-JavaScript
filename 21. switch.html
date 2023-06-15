@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Switch Statements</title>
+    <script>
+      /*Write a program to accept a month number from the user and 
+        display the name of the season in which the given month falls 
+        as per the table given below:
+
+        Month Number        Season Name
+        11,12,1,2            Winter
+        3,4,5,6              Summer
+        7,8,9,10             Rainy
+
+        Any other value Wrong month number using switch  */
+
+      // Prompt the user for input
+      var userInput = prompt("Enter a month number:");
+
+      // Parse the input as an integer
+      var monthNumber = Number(userInput);
+
+      // Determine the season based on the month number using a switch statement
+      switch (monthNumber) {
+        case 11:
+        case 12:
+        case 1:
+        case 2:
+          console.log("Winter");
+          break;
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          console.log("Summer");
+          break;
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+          console.log("Rainy");
+          break;
+        default:
+          console.log("Wrong month number");
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
