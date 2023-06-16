@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Displaying message in different ways</title>
+    <script>
+      // printing double quoted string
+
+      document.write('"JavaScript String"');
+
+      // another way : document.write("  \"JavaScript Engine\" "); is also correct
+
+      // displaying variable value
+
+      var a = 10;
+      document.write("<br>" + a); // '+'  is a concatenation operator
+
+      //   variable with message
+      document.write("<br> Value of a is " + a);
+
+      document.write("<br> Sum of a + 10 is " + a + 10); // + as concatenation in both case
+
+      document.write("<br> Sum of a + 10 is " + (a + 10)); // + as addition in later case
+
+      //   dynamic behaviour of javascript variables
+      var x;
+      document.write("<br> Value of x is " + x);
+
+      x = null;
+      document.write("<br> Value of x is " + x);
+
+      x = 10;
+      document.write("<br> Value of x is " + x);
+
+      x = "JavaScript";
+      document.write("<br> Value of x is " + x);
+
+      x = true;
+      document.write("<br> Value of x is " + x);
+    </script>
+  </head>
+  <body></body>
+</html>
