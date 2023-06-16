@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators in JS</title>
+
+    <script>
+      // arithmetic operators
+      var a = parseInt(prompt("Enter first number: "));
+      var b = parseInt(prompt("Enter second number: "));
+      document.write("Sum is : " + (a + b) + "<br>");
+      document.write("Difference is : " + (a - b) + "<br>");
+      document.write("Product is : " + a * b + "<br>");
+      document.write("Quotient is : " + a / b + "<br>");
+      document.write("Remainder is : " + (a % b) + "<br>");
+
+      //   relational operators with numbers and string
+
+      var c = 10;
+      var d = "10";
+      var e = 10;
+      document.write((c == d) + "<br>");
+      document.write((c == e) + "<br>");
+      document.write((c === d) + "<br>");
+      document.write((c === e) + "<br>");
+
+      //   relational operators with numbers and boolean
+
+      var w = 1;
+      var x = true;
+      var y = false;
+      var z = 0;
+
+      document.write((w == x) + "<br>");
+      document.write((y == z) + "<br>");
+      document.write((w === x) + "<br>");
+      document.write((y === z) + "<br>");
+
+      document.write((w != x) + "<br>");
+      document.write((y != z) + "<br>");
+      document.write((w !== x) + "<br>");
+      document.write((y !== z) + "<br>");
+
+      // typeof operator
+
+      document.write(typeof 56 + "<br>");
+      document.write(typeof "kathmandu" + "<br>");
+      document.write(typeof true + "<br>");
+      document.write(typeof (3 + 4) + "<br>");
+      console.log(78, typeof 78 + "<br>");
+      console.log("Kathmandu", typeof "kathmandu");
+      console.log(true, typeof true);
+      console.log(3 + 9, typeof (3 + 4));
+    </script>
+  </head>
+  <body></body>
+</html>
