@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop in JS</title>
+    <script>
+      let num = prompt("Enter any Number");
+      let sumEven = 0;
+      let sumOdd = 0;
+      for (let i = 1; i <= num; i++) {
+        i % 2 == 0 ? (sumEven += i) : (sumOdd += i);
+      }
+      document.write(`Sum of evens upto ${num} is ${sumEven} <br>`);
+      document.write(`Sum of odds upto ${num} is ${sumOdd} <br>`);
+    </script>
+  </head>
+  <body></body>
+</html>
