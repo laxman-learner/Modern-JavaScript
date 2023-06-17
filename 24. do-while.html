@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While in JS</title>
+
+    <script>
+      /*JavaScript code to accept the birth year from the user and calculate and
+        print his age. Also print whether the user can vote or not . Make sure if
+        the age turns out to be 0 or negative your code prompts the user to input
+        his birth year again until the age comes positive */
+
+      let birthYear;
+      let currentYear = 2023;
+      let age;
+
+      do {
+        birthYear = prompt("Enter your birth year :");
+        age = currentYear - birthYear;
+
+        if (age <= 0) {
+          prompt("Invalid birth year. Please enter a valid year ");
+        }
+      } while (age <= 0);
+
+      document.write("Your age is: " + age);
+
+      if (age >= 18) {
+        document.write("You are eligible to vote.");
+      } else {
+        document.write("You are not eligible to vote yet.");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
