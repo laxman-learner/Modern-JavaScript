@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for...in loop in JS</title>
+    <script>
+      let nums = [10, 20, 30, 40, 50, 60];
+      for (let i in nums) {
+        document.write(`${i} <br>`); // returns index of the array (0-5) in this case
+      }
+
+      for (let i in nums) {
+        document.write(`${nums[i]} <br>`); // returns elements of the array
+      }
+
+      //   for.....in loop does not iterates for 'undefined' value
+
+      document.write(
+        "for...in loop with array containing undefined values <br>"
+      );
+      let values = [10, 20, , 40, , 60];
+      for (let x in values) {
+        document.write(`${x} <br>`); // returns only those index for which there is a value
+      }
+
+      for (let x in values) {
+        document.write(`${values[x]} <br>`); // returns only 10, 20, 40, and 60 only
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
