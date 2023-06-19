@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Arrays</title>
+    <script>
+      // using 'delete' operator and for loop for printing array elements
+
+      let nums = [20, 40, 48, 93, 29, 90, 38];
+      let i;
+      for (i = 0; i < nums.length; i++) {
+        document.write(`${nums[i]} <br>`);
+      }
+      delete nums[3];
+      delete nums[5];
+      document.write("After deleting the fourth and sixth element : <br>");
+
+      for (i = 0; i < nums.length; i++) {
+        document.write(`${nums[i]} <br>`);
+      }
+
+      nums[3] = 500;
+      nums[5] = 300;
+      document.write(
+        "After reinitializing the fourth and sixth element : <br>"
+      );
+
+      for (i = 0; i < nums.length; i++) {
+        document.write(`${nums[i]} <br>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
