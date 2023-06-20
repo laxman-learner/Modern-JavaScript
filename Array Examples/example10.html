@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods in JS</title>
+    <script>
+      // join() and indexOf() method in JS
+
+      let arr = ["Ram", "Shyam", "Narayan", "Hari", "Shiva", "Narayan"];
+      let str = arr.join();
+      document.write(`${str} <br>`);
+      str = arr.join("");
+      document.write(`${str} <br>`);
+      str = arr.join(" ");
+      document.write(`${str} <br>`);
+      str = arr.join(" - ");
+      document.write(`${str} <br>`);
+
+      document.write(`${arr.toString()} <br>`);
+      //   toString() method works similarly as join() method but we can not pass argument to it
+      //   By default, toString() method is called when we print the array using its name
+      //   for example: document.write(`${arr}`);  for printing above arrays
+
+      document.write("Using indexOf() method <br>");
+      document.write(`Ram is at ${arr.indexOf("Ram") + 1} position <br>`);
+      document.write(
+        `Narayan is at ${arr.indexOf("Narayan") + 1} position <br>`
+      );
+      document.write(
+        `Narayan is at ${arr.indexOf("Narayan", 3) + 1} position also`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
