@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+    <script>
+      const arr = [2, 1, 11, 4, 25, 19, 8, 100, 3, 0];
+      document.write("Original array <br>");
+      for (x of arr) {
+        document.write(`${x} <br>`);
+      }
+      arr.reverse();
+      // reverses the original array. It converts array elements into strings and then performs
+      //   sorting. This is the reason 100 comes before 11.
+      document.write("Reversed array <br>");
+      for (x of arr) {
+        document.write(`${x} <br>`);
+      }
+
+      arr.sort();
+      document.write("Sorted array <br>");
+      for (x of arr) {
+        document.write(`${x} <br>`);
+      }
+
+      // sort() method with string array
+
+      let colors = ["red", "blue", "Black", "Violet", "indigo"];
+
+      document.write("Original color array <br>");
+      for (x of colors) {
+        document.write(`${x} <br>`);
+      }
+
+      colors.sort();
+      document.write("Sorted color array <br>");
+      for (x of colors) {
+        document.write(`${x} <br>`);
+      }
+
+      let mix = ["red", "blue", 100, "Violet", 25];
+
+      document.write("Original color array <br>");
+      for (x of mix) {
+        document.write(`${x} <br>`);
+      }
+
+      mix.sort();
+      document.write("Sorted color array <br>");
+      for (x of mix) {
+        document.write(`${x} <br>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
