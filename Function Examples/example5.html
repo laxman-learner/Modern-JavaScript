@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope in JS</title>
+    <script>
+      a = 10;
+      function f1() {
+        a = 5;
+        alert(a);
+      }
+      function f2() {
+        alert(a);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 20px; font-weight: bold">
+      To call f1 <a href="javascript:f1();">Click Here</a> <br />
+      To call f2
+      <a href="javascript:f2();">Click Here</a>
+
+      <!-- if we call the f1() first and then f2() the output is 5 for both the case
+            But, if we call f2() first then output will be 10 and output for f1() will be 5 -->
+    </div>
+  </body>
+</html>
