@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope in JS</title>
+    <script>
+      var a = 10; // global variable
+      function f1() {
+        var a = 5; // local variable
+        alert(a);
+      }
+      function f2() {
+        alert(a);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 20px; font-weight: bold">
+      To call f1 <a href="javascript:f1();">Click Here</a> <br />
+      To call f2
+      <a href="javascript:f2();">Click Here</a>
+
+      <!-- Now, f1() returns 5 and f2() returns 10 irrespective of the order they are 
+        called since variable 'a' declared inside f1() is separate local variable -->
+    </div>
+  </body>
+</html>
