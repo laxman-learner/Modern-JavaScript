@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>function returning a value</title>
+    <script>
+      function addnos(x, y) {
+        let z = x + y;
+        return z; // if return statement is ommited 'undefined' value is returned in this case
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; font-size: 20px; font-weight: bold">
+      To calculate sum
+      <a href="javascript:document.write(`Sum is ${addnos(20,10)}`);"
+        >Click me</a
+      >
+      <!-- using semicolon after function call is optional -->
+    </div>
+  </body>
+</html>
