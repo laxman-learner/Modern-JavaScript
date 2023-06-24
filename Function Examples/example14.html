@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anonymous Function</title>
+    <script>
+      let a = function () {
+        let message = "Hello user";
+        return message;
+      };
+    </script>
+    <body>
+      <script>
+        let str = a;
+        document.write(str); // returns the function body
+        str = a();
+        document.write(` <br> ${str}`); // executes the function body
+      </script>
+    </body>
+  </head>
+</html>
