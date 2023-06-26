@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      // Iterating over the properties
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.color = "red";
+      myCar.speed = 60;
+      myCar["Reg No"] = "RG2045";
+
+      //   printing only keys
+      for (key in myCar) {
+        document.write(`${key} <br>`);
+      }
+
+      //   printing only values
+
+      for (key in myCar) {
+        document.write(`${myCar[key]} <br>`); // myCar.key is not valid
+      }
+
+      //   printing both keys and values
+
+      for (key in myCar) {
+        document.write(`Key : ${key}  , value : ${myCar[key]} <br>`);
+      }
+    </script>
+  </head>
+</html>
