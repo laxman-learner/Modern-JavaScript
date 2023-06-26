@@ -3,12 +3,18 @@
   <head>
     <title>setInterval Method</title>
     <script>
+      let i = 1;
       function greeting() {
         document.write("Good morning <br>");
+        i++;
+        if (i == 10) {
+          clearInterval(y);
+          document.write("Done !!!");
+        }
       }
-      y = setTimeout(greeting, 3000);
+      y = setInterval(greeting, 2000);
       function stop() {
-        clearTimeout(y);
+        clearInterval(y);
       }
     </script>
   </head>
