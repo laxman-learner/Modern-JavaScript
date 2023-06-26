@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      // Adding method to any object
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.color = "red";
+      myCar["Reg No"] = "RGI1394";
+
+      // method may have parameters or not
+      myCar.printAll = function (msg) {
+        document.write(`${msg} <br>`);
+        document.write(
+          `Name : ${myCar.name} , Color : ${myCar.color} , Registration No : ${myCar["Reg No"]}`
+        );
+      };
+      myCar.printAll("This is all about properties of object");
+
+      myCar["start car"] = function () {
+        document.write("<br> Start the car");
+      };
+      myCar["start car"]();
+    </script>
+  </head>
+</html>
