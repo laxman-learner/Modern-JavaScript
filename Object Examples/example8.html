@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      // Iterating over the properties
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.color = "red";
+      myCar.speed = 60;
+      myCar["Reg No"] = "RG2045";
+
+      document.write("Keys of myCar : <br>");
+      //   printing only keys
+      for (key of Object.keys(myCar)) {
+        document.write(`${key} <br>`);
+      }
+
+      //   printing only values
+      document.write("Values of myCar : <br>");
+
+      for (value of Object.values(myCar)) {
+        document.write(`${value} <br>`);
+      }
+
+      //   printing both keys and values
+      document.write("Keys and Values of myCar : <br>");
+      for ([key, value] of Object.entries(myCar))
+        document.write(`Key : ${key} , value : ${value} <br>`);
+    </script>
+  </head>
+</html>
