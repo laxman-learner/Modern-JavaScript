@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      // nested objects
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.color = "red";
+      myCar.stereo = new Object();
+      myCar.stereo.name = "Sony";
+      myCar.stereo.color = "green";
+      //   document.write(myCar); does not work properly
+      document.write(myCar.name + "<br>");
+      document.write(myCar.stereo.name + "<br>");
+      document.write(myCar.stereo.color + "<br>");
+      console.log(myCar);
+    </script>
+  </head>
+</html>
