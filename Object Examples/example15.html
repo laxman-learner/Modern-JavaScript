@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects in JS</title>
+    <script>
+      let student = {
+        name: "Sumit",
+        age: 15,
+        phy: 45,
+        chem: 50,
+        maths: 65,
+      };
+
+      let totalMarks = 0;
+
+      for (let key in student) {
+        if (typeof student[key] === "number") {
+          totalMarks += student[key];
+        }
+      }
+
+      console.log("Total Marks:", totalMarks);
+    </script>
+  </head>
+</html>
