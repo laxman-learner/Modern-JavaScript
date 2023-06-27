@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      /* JavaScript code to access all the properties of
+            myCar objects and it’s nested object using for in loop */
+
+      let myCar = {
+        name: "sony",
+        color: "red",
+        regNo: "MP345",
+        engine: {
+          type: "V6",
+          displacement: "3.0L",
+        },
+      };
+
+      function displayProperties(obj) {
+        for (let key in obj) {
+          if (typeof obj[key] === "object" && obj[key] !== null) {
+            displayProperties(obj[key]);
+          } else {
+            console.log(`${key}: ${obj[key]}`);
+          }
+        }
+      }
+
+      displayProperties(myCar);
+    </script>
+  </head>
+</html>
