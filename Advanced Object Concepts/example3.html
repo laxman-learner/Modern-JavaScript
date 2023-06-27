@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This in JavaScript</title>
+    <script>
+      // various roles of 'this' keyword
+
+      //   alone
+      var x = 10;
+      document.write(`${window} <br>`);
+      document.write(`${this} <br>`);
+      document.write(`${window.x} <br>`);
+      document.write(`${this.x} <br>`);
+
+      //   inside function
+      function myFunction() {
+        var x = 20;
+        return this.x; // returns 10 - same as window.x to access global variable
+      }
+      document.write(`${myFunction()} <br>`);
+
+      //   inside method
+
+      let myCar = {
+        name: "Maruti",
+        color: "red",
+        price: "50L",
+        printAll: function () {
+          document.write(`Your car Details : <br>`);
+          document.write(
+            `Name : ${this.name} , Color : ${this.color} , Price : ${this.price} <br>`
+          );
+        },
+      };
+      myCar.printAll();
+    </script>
+  </head>
+  <body>
+    <!-- role of 'this' in event handler -->
+    <br />
+    <input
+      type="button"
+      value="Click Me to change background color"
+      onclick="this.style.backgroundColor = 'gold'"
+    />
+
+    <br />
+    <p onclick="this.style.color = 'green'">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+      veritatis molestiae soluta, impedit excepturi esse earum magnam quam autem
+      dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sunt
+      molestiae sed esse quis eos, error saepe exercitationem harum ipsam,
+      consequuntur eveniet deserunt doloribus eaque repudiandae ullam vero?
+      Similique reiciendis sed repudiandae explicabo, officiis quas eaque quasi
+      repellat illo quidem perspiciatis eum vitae non eius ratione ad laudantium
+      voluptatibus. Nisi!
+    </p>
+  </body>
+</html>
