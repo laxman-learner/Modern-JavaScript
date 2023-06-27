@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Callback function</title>
+    <script>
+      function multiply(a, b, checkRes) {
+        document.write("Multiply Called : <br>");
+        let prod = a * b;
+        document.write(`The product of ${a} and ${b} is ${prod} <br>`);
+        checkRes(prod);
+      }
+
+      function evenOdd(result) {
+        document.write("EvenOdd Called <br>");
+        if (result % 2 == 0) document.write(`${result} is Even <br>`);
+        else document.write(`${result} is Odd <br>`);
+      }
+
+      multiply(5, 3, evenOdd);
+      document.write("Again Callback <br>");
+      multiply(10, 20, evenOdd);
+    </script>
+  </head>
+</html>
