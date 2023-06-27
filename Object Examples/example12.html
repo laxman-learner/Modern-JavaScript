@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      // Adding methods  using Object literal
+      let myCar = {
+        name: "sony",
+        color: "red",
+        regNo: "MP345",
+        printAll: function (msg) {
+          document.write(msg + "<br>");
+          document.write(
+            `Name : ${myCar.name} , Color : ${myCar.color} ,  Reg No : ${myCar.regNo}`
+          );
+        },
+      };
+      console.log(myCar);
+      document.write(myCar.name + "<br>");
+      document.write(myCar.color + "<br>");
+      document.write(myCar["regNo"] + "<br>");
+      myCar.printAll("Your Car Details :");
+    </script>
+  </head>
+</html>
