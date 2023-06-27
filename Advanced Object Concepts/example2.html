@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced object Concepts</title>
+    <script>
+      // object equality
+      let a = 10;
+      let b = 10;
+      document.write(`${a === b} <br>`);
+
+      let person1 = { name: "Sachin", gender: "male" };
+      let person2 = { name: "Sachin", gender: "male" };
+      document.write(`${person1 === person2} <br>`);
+
+      //   using stringify() method to convert object into string
+
+      let p1 = JSON.stringify(person1);
+      let p2 = JSON.stringify(person2);
+      document.write(`${p1} <br>`);
+      document.write(`${p2} <br>`);
+
+      //   comparing p1 and p2
+      document.write(p1 === p2);
+    </script>
+  </head>
+</html>

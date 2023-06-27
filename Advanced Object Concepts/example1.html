@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced object Concepts</title>
+    <script>
+      // overriding toString() method
+
+      let myCar = {
+        name: "Balento",
+        color: "red",
+        toString: function () {
+          return `Name : ${myCar.name} , Color :  ${myCar.color}`;
+        },
+      };
+      document.write("Your Car Details : <br>");
+      document.write(myCar);
+      //   toString() method  is automatically called
+    </script>
+  </head>
+</html>
