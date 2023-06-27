@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrow Function</title>
+    <script>
+      let area = (radius) => 3.14 * radius * radius;
+      document.write(`Area of circle of radius 5 is ${area(5)} <br>`);
+
+      let evenOdd = (num) =>
+        num % 2 == 0 ? `${num} is Even ` : `${num} is Odd `;
+      document.write(`${evenOdd(25)} <br>`);
+      document.write(`${evenOdd(50)} <br>`);
+      document.write(`${evenOdd(200)} <br>`);
+    </script>
+  </head>
+</html>
