@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>setInterval() method with arrow function</title>
+    <title>forEach method in JS</title>
 
     <script>
-      let x = 1;
+      function displayValue(x) {
+        document.write(`${x} <br>`);
+      }
+      function displayIndex(x, i) {
+        document.write(`index : ${i} , value : ${x} <br>`);
+      }
+      function displayArray(x, i, a) {
+        document.write(`Value : ${x} at index : ${i}   of array  [${a}]<br>`);
+      }
+      let arr = [10, 20, 30, 40, 50, 60];
 
-      let y = setInterval(() => {
-        document.write(`${x}<br>`);
-        x++;
-        if (x == 11) {
-          document.write("Done !!!");
-          clearInterval(y);
-        }
-      }, 100);
+      document.write(`<strong>Array elements: </strong> <br>`);
+      arr.forEach(displayValue);
+
+      document.write(
+        `<strong>Array elements with respective index: </strong> <br>`
+      );
+      arr.forEach(displayIndex);
+
+      document.write(`<strong>Array elements with array: </strong> <br>`);
+      arr.forEach(displayArray);
     </script>
   </head>
 </html>
