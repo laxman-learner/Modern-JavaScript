@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>setInterval() method with arrow function</title>
+
+    <script>
+      let x = 1;
+
+      let y = setInterval(() => {
+        document.write(`${x}<br>`);
+        x++;
+        if (x == 11) {
+          document.write("Done !!!");
+          clearInterval(y);
+        }
+      }, 100);
+    </script>
+  </head>
+</html>
