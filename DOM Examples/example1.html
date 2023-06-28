@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Examples</title>
+    <script>
+      function operate() {
+        document.body.bgColor = "green";
+
+        let images = document.images;
+        images[0].src = "../Images/person.jpg";
+
+        let links = document.links;
+        links[0].href = "https://www.facebook.com/";
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="operate()">Click me</button> <br />
+    <img
+      src="../Images/laxman.jpg"
+      alt=""
+      style="height: 500px; width: 300px; padding-left: 100px"
+    />
+    <br />
+    <button>
+      <a
+        href="https://www.youtube.com/"
+        style="text-decoration: none; font-size: large"
+        >Youtube</a
+      >
+    </button>
+  </body>
+</html>
