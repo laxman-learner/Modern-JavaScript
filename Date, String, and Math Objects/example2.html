@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Object</title>
+    <script>
+      let text = "Type a string";
+      document.write(`${text} <br>`);
+      document.write(`Length is ${text.length} <br>`);
+
+      document.write(`Char at 6th position is '${text.charAt(5)}' <br>`);
+      document.write(`Char at 15th position is ${text.charAt(14)}    <br>`);
+
+      document.write(
+        `Unicode of  6th position character is ${text.charCodeAt(5)} <br>`
+      );
+      document.write(
+        `Unicode of unknown character is  is ${text.charCodeAt(14)} <br>`
+      );
+
+      let str = "Sunday is a fun day";
+      document.write(`${str} <br>`);
+      document.write(`The first index of 'day' is ${str.indexOf("day")} <br>`);
+
+      document.write(
+        `The last index of 'day' is ${str.lastIndexOf("day")} <br>`
+      );
+
+      var s1 = "Welcome user you are user";
+      var s2 = s1.replace("user", "Amit"); // replace the first occurace
+      document.write(s1 + "<br>");
+      document.write(s2 + "<br>");
+      s2 = s1.replaceAll("user", "Amit");
+      document.write(s2 + "<br>");
+
+      s2 = s1.substr(3, 4);
+      document.write(s2 + "<br>");
+
+      s2 = s1.substring(3, 4);
+      document.write(s2 + "<br>"); // returns 'c'
+
+      s2 = s1.substring(8, 0); // returns : 'Welc'
+      document.write(s2 + "<br>");
+
+      s2 = s1.toUpperCase();
+      document.write(s2 + "<br>");
+    </script>
+  </head>
+</html>
