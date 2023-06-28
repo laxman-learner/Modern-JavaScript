@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>setInterval() method with anonymous function</title>
+
+    <script>
+      let x = 1;
+
+      let y = setInterval(function () {
+        document.write(`${x}<br>`);
+        x++;
+        if (x == 10) {
+          document.write("Done !!!");
+          clearInterval(y);
+        }
+      }, 500);
+    </script>
+  </head>
+</html>
