@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Callback function Demo</title>
+    <title>Anonymous function as callback function</title>
 
     <script>
       /* High Order Function called area() which accepts the radius of a Circle as argument
        and a callback function which displays area. Then from area() calculate the area and
         call the callback to display area   */
 
-      function display(x) {
-        document.write(`Area of circle is ${x}`);
-      }
-
       function area(rad, p) {
         x = Math.PI * Math.pow(rad, 2);
         p(x);
       }
 
-      area(5, display);
+      area(5, function (x) {
+        document.write(`Area of circle is ${x}`);
+      });
     </script>
   </head>
 </html>
